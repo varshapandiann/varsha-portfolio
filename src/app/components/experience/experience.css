@@ -1,0 +1,70 @@
+.text-purple {
+  color: #9d8cff;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #214b93;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1.9rem;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #214b93;
+  border: 3px solid #0a0a0a;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.6);
+}
+
+.exp-role {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.exp-period {
+  font-size: 1rem;
+  color: #a0a0b0;
+  white-space: nowrap;
+}
+
+.exp-company {
+  color: #6495ED;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.exp-desc {
+  color: #a0a0b0;
+  font-size: 0.9rem;
+  line-height: 2;
+  padding-left: 1.2rem;
+}
+
+.exp-desc li {
+  margin-bottom: 0.4rem;
+}

@@ -27,3 +27,39 @@ html, body {
   background: #10306b;
   border-radius: 3px;
 }
+
+/* Common styles for sections and cards */
+.section {
+  background: transparent;
+  padding: 80px 0;
+}
+
+.card-layout {
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  background: black;
+  transition: box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease, box-shadow 0.4s ease;
+}
+
+.card-layout.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-layout:hover {
+  box-shadow: 0 0 15px #79a0e3;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.text-blue {
+  color: #6495ED;
+}

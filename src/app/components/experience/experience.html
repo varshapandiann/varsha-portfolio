@@ -1,0 +1,31 @@
+<section class="section py-5" id="experience">
+  <div class="container-fluid px-4 px-md-5">
+
+    <div class="card-layout" #expCard>
+      <div class="p-4 p-md-5">
+
+        <h2 class="section-title mb-5">
+          <i class="bi bi-briefcase me-2 text-blue"></i>Work Experience
+        </h2>
+
+        <div class="timeline">
+          <div class="timeline-item" *ngFor="let exp of experiences">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-1">
+                <h4 class="exp-role">{{ exp.role }}</h4>
+                <span class="exp-period">{{ exp.period }}</span>
+              </div>
+              <p class="exp-company mb-2">{{ exp.company }}</p>
+              <ul class="exp-desc">
+                <li *ngFor="let point of exp.description">{{ point }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
