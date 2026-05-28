@@ -1,0 +1,45 @@
+<section class="section py-5" id="education">
+  <div class="container-fluid px-4 px-md-5">
+
+    <div class="card-layout" #eduCard>
+      <div class="p-4 p-md-5">
+
+        <h2 class="section-title mb-5">
+          <i class="bi bi-mortarboard-fill me-2 text-blue"></i>Education
+        </h2>
+
+        <div class="timeline">
+          <div class="timeline-item" *ngFor="let edu of education; let last = last">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+
+              <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-1">
+                <h4 class="edu-institution">{{ edu.institution }}</h4>
+                <span class="edu-period">{{ edu.period }}</span>
+              </div>
+
+              <p class="edu-degree mb-1">{{ edu.degree }}</p>
+              <p class="edu-location mb-3">
+                <i class="bi bi-geo-alt-fill me-1"></i>{{ edu.location }}
+              </p>
+
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="bi bi-book text-blue"></i>
+                <span class="coursework-label">Relevant Coursework</span>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge-course" *ngFor="let course of edu.coursework">
+                  {{ course }}
+                </span>
+              </div>
+
+              <div class="timeline-divider" *ngIf="!last"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

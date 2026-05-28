@@ -1,3 +1,10 @@
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
 /* Timeline */
 .timeline {
   position: relative;
@@ -16,11 +23,6 @@
 
 .timeline-item {
   position: relative;
-  margin-bottom: 3rem;
-}
-
-.timeline-item:last-child {
-  margin-bottom: 0;
 }
 
 .timeline-dot {
@@ -35,32 +37,47 @@
   box-shadow: 0 0 8px rgba(108, 99, 255, 0.6);
 }
 
-.exp-role {
+.edu-institution {
   font-size: 1.1rem;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
 }
 
-.exp-period {
+.edu-period {
   font-size: 1rem;
   color: #a0a0b0;
   white-space: nowrap;
 }
 
-.exp-company {
+.edu-degree {
   color: #6495ED;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
-.exp-desc {
+.edu-location {
   color: #a0a0b0;
-  font-size: 0.9rem;
-  line-height: 2;
-  padding-left: 1.2rem;
+  font-size: 0.85rem;
 }
 
-.exp-desc li {
-  margin-bottom: 0.4rem;
+.coursework-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.badge-course {
+  background: transparent;
+  color: white;
+  border: 1px solid #214b93;
+  border-radius: 20px;
+  padding: 3px 12px;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+.timeline-divider {
+  border-top: 1px transparent solid;
+  margin: 1.5rem 0;
 }

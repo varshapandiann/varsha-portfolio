@@ -37,7 +37,6 @@ export class AboutComponent implements OnInit {
   interests: [
     'Backend Engineering',
     'Scalable System Design',
-    'Microservices Architecture',
     'Distributed Systems',
     'Full-Stack Development',
     'Generative AI',
