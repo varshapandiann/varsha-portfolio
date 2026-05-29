@@ -4,10 +4,11 @@ import { HomeComponent } from "./components/home/home";
 import { AboutComponent } from "./components/about/about";
 import { ExperienceComponent } from "./components/experience/experience";
 import { EducationComponent } from './components/education/education';
+import { ProjectComponent } from "./components/project/project";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomeComponent, AboutComponent, ExperienceComponent, EducationComponent],
+  imports: [RouterOutlet, HomeComponent, AboutComponent, ExperienceComponent, EducationComponent, ProjectComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

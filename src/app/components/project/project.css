@@ -1,0 +1,140 @@
+.section-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.slider-wrapper.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slider-track-wrapper {
+  overflow: hidden;
+  flex: 1;
+}
+
+.slider-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease;
+}
+
+.project-card {
+  min-width: 320px;
+  width: 320px;
+  border: 2px solid white;
+  border-radius: 16px;
+  background: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 15px #79a0e3;
+}
+
+.card-img-wrapper {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.project-desc {
+  color: #a0a0b0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  min-height: 80px;
+}
+
+.badge-tech {
+  background: transparent;
+  color: white;
+  border: 1px solid #214b93;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+}
+
+.btn-action {
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-purple {
+  border: 1px solid #214b93;
+  color: white;
+  background: transparent;
+}
+
+.btn-outline-purple:hover {
+  background: #214b93;
+  color: white;
+}
+
+.btn-ghost-blue {
+  border: 1px solid transparent;
+  color: #a0a0b0;
+  background: transparent;
+}
+
+.btn-ghost-blue:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.slider-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #214b93;
+  background: transparent;
+  color: #c4bcff;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+.slider-btn:hover:not(:disabled) {
+  background: #214b93;
+  color: white;
+}

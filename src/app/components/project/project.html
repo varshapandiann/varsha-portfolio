@@ -1,0 +1,43 @@
+<section class="section py-5" id="projects">
+  <div class="container-fluid px-4 px-md-5">
+
+    <h2 class="section-title text-center mb-5">My Work</h2>
+
+    <div class="slider-wrapper" #projectSection>
+
+      <button class="slider-btn prev-btn" (click)="prev()">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+
+      <div class="slider-track-wrapper">
+        <div class="slider-track" [style.transform]="'translateX(-' + currentIndex * cardWidth + 'px)'">
+          <div class="project-card" *ngFor="let project of projects">
+            <div class="card-img-wrapper">
+              <img [src]="project.image" [alt]="project.title" class="card-img" />
+            </div>
+            <div class="card-body-content">
+              <h5 class="project-title">{{ project.title }}</h5>
+              <p class="project-desc">{{ project.description }}</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="badge-tech" *ngFor="let tech of project.techStack">{{ tech }}</span>
+              </div>
+              <div class="d-flex justify-content-between mt-auto">
+                <a [href]="project.liveUrl" target="_blank" class="btn-action btn-outline-purple">
+                  <i class="bi bi-rocket-takeoff me-2"></i>Live Demo
+                </a>
+                <a [href]="project.sourceUrl" target="_blank" class="btn-action btn-ghost-blue">
+                  <i class="bi bi-github me-2"></i>Source
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider-btn next-btn" (click)="next()">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+
+    </div>
+  </div>
+</section>
