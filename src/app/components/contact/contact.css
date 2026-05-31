@@ -1,0 +1,35 @@
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contact-subtitle {
+  color: #a0a0b0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.contact-btn {
+  padding: 10px 28px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #a0a0b0;
+  border: 1px solid #214b93;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.contact-btn:hover {
+  background: #214b93;
+  color: white;
+  border-color: #214b93;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(108, 99, 255, 0.3);
+}
+
+.footer-text {
+  color: #a0a0b0;
+  font-size: 0.85rem;
+}
