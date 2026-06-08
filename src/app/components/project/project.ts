@@ -15,55 +15,55 @@ export class ProjectComponent implements OnInit {
   cardWidth = 340; // card width + gap
 
   projects = [
-    {
-      title: 'Skin Tone Classification Using Deep Learning',
-      description: 'Developed and trained 3 image classification models to classify skin tones, achieving up to 87% accuracy with k-fold cross-validation.',
-      image: 'https://placehold.co/600x400/041530/5892f5?text=Skin+Tone+AI',
-      techStack: ['Python', 'TensorFlow', 'Pandas', 'NumPy', 'Jupyter Notebook'],
-      liveUrl: '#',
-      sourceUrl: '#'
-    },
-    {
-      title: 'Campus Placement Outcome Predictor',
-      description: 'Built Random Forest and SVM models to predict student placement outcomes with 81.39% accuracy, involving feature scaling and hyperparameter tuning.',
-      image: 'https://placehold.co/600x400/041530/5892f5?text=Placement+Predictor',
-      techStack: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib', 'Google Colab'],
-      liveUrl: '#',
-      sourceUrl: '#'
-    },
-    {
-      title: 'Campus Event Hub',
-      description: 'A full-stack MERN application for university students to discover, register for, and manage campus events with an admin dashboard.',
-      image: 'https://placehold.co/600x400/041530/5892f5?text=Campus+Event+Hub',
-      techStack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'MERN'],
-      liveUrl: '#',
-      sourceUrl: '#'
-    },
-    {
-      title: 'Personalized Learning Path Agent',
-      description: 'An agentic AI system that creates customized learning paths for students based on their interests and goals, dynamically suggesting courses and projects.',
-      image: 'https://placehold.co/600x400/041530/5892f5?text=Learning+Path+Agent',
-      techStack: ['Agentic AI', 'LLM', 'GenAI', 'Python', 'React'],
-      liveUrl: '#',
-      sourceUrl: '#'
-    },
-    {
-      title: 'Clinical Trial RR Prediction',
-      description: 'Analyzed a dataset of 450,000+ clinical trials. Engineered features and evaluated regression models using RMSE and R² metrics.',
-      image: 'https://placehold.co/600x400/041530/5892f5?text=Clinical+Trial+ML',
-      techStack: ['Python', 'Pandas', 'Scikit-learn', 'Seaborn', 'Google Colab'],
-      liveUrl: '#',
-      sourceUrl: '#'
-    },
-    {
-      title: 'AI Doodle Sketch Classifier',
-      description: 'An interactive deep learning web app where users draw sketches on a canvas and the model predicts what the sketch is in real time.',
-      image: 'https://placehold.co/600x400/041530/5892f5?text=Doodle+Classifier',
-      techStack: ['Python', 'CNN', 'Keras', 'Streamlit', 'Vercel'],
-      liveUrl: '#',
-      sourceUrl: 'https://github.com/varshapandiann/ai-doodles-classifier'
-    }
-  ];
+  {
+    title: 'Bloom & Bridge',
+    description: '6-service microservices platform for soft skills learning with Spring Cloud Gateway, JWT auth, gamified XP tracking, and an Angular 17 frontend on Vercel.',
+    image: 'https://placehold.co/600x400/041530/5892f5?text=Bloom+%26+Bridge',
+    techStack: ['Java 21', 'Spring Boot 3', 'Angular 17', 'Spring Cloud Gateway', 'MySQL', 'JWT', 'TailwindCSS', 'Vercel'],
+    liveUrl: '#',
+    sourceUrl: '#'
+  },
+  {
+    title: 'Subscription Billing Management System',
+    description: 'Full-stack billing platform with JWT-secured REST APIs, role-based access for 3 user types, automated invoicing, and an Angular frontend.',
+    image: 'https://placehold.co/600x400/041530/5892f5?text=Billing+System',
+    techStack: ['Java', 'Spring Boot', 'Angular', 'MySQL', 'Spring Security', 'JWT', 'Spring Mail', 'JPA/Hibernate'],
+    liveUrl: '#',
+    sourceUrl: '#'
+  },
+  {
+    title: 'DevPing — Real-Time Notification Service',
+    description: 'Subscribe to build, PR, and deployment events and get real-time in-app alerts via WebSockets, with notification history and read/unread tracking.',
+    image: 'https://placehold.co/600x400/041530/5892f5?text=DevPing',
+    techStack: ['Java', 'Spring Boot', 'WebSockets', 'STOMP', 'Angular', 'MySQL', 'JWT'],
+    liveUrl: '#',
+    sourceUrl: '#'
+  },
+  {
+    title: 'URL Shortener with Analytics',
+    description: 'Shorten URLs with per-link click analytics, custom slugs, expiry dates, and a Redis-cached redirect layer for fast lookups.',
+    image: 'https://placehold.co/600x400/041530/5892f5?text=URL+Shortener',
+    techStack: ['Java', 'Spring Boot', 'MySQL', 'Redis', 'REST APIs', 'Swagger'],
+    liveUrl: '#',
+    sourceUrl: '#'
+  },
+  {
+    title: 'Roast My Dev Profile',
+    description: 'Paste your GitHub username and get an AI-powered roast of your developer profile — weak repos, missing READMEs, skill gaps — with real fixes.',
+    image: 'https://placehold.co/600x400/041530/5892f5?text=Roast+My+Profile',
+    techStack: ['Angular', 'Spring Boot', 'GitHub API', 'Gemini API', 'TailwindCSS'],
+    liveUrl: '#',
+    sourceUrl: '#'
+  },
+  {
+    title: 'Campus Placement Outcome Predictor',
+    description: 'Random Forest and SVM models predicting student placement outcomes with 81.39% accuracy via feature scaling and hyperparameter tuning.',
+    image: 'https://placehold.co/600x400/041530/5892f5?text=Placement+Predictor',
+    techStack: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Google Colab'],
+    liveUrl: '#',
+    sourceUrl: '#'
+  }
+];
 
   ngOnInit() {
     const observer = new IntersectionObserver((entries) => {
