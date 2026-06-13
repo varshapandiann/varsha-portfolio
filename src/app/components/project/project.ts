@@ -58,10 +58,10 @@ export class ProjectComponent implements OnInit {
   {
     title: 'Campus Placement Outcome Predictor',
     description: 'Random Forest and SVM models predicting student placement outcomes with 81.39% accuracy via feature scaling and hyperparameter tuning.',
-    image: 'https://placehold.co/600x400/041530/5892f5?text=Placement+Predictor',
+    image: 'projects/placement-predictor.png',
     techStack: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Google Colab'],
-    liveUrl: '#',
-    sourceUrl: '#'
+    liveUrl: 'https://campus-placement-predictor.streamlit.app/',
+    sourceUrl: 'https://github.com/varshapandiann/Campus-Placement-Prediction'
   }
 ];
 
