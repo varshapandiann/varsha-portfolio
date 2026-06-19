@@ -26,7 +26,7 @@ export class ProjectComponent implements OnInit {
   {
     title: 'Subscription Billing Management System',
     description: 'Full-stack billing platform with JWT-secured REST APIs, role-based access for 3 user types, automated invoicing, and an Angular frontend.',
-    image: 'https://placehold.co/600x400/041530/5892f5?text=Billing+System',
+    image: 'projects/subscription-billing.png',
     techStack: ['Java', 'Spring Boot', 'Angular', 'MySQL', 'Spring Security', 'JWT', 'Spring Mail', 'JPA/Hibernate'],
     liveUrl: '#',
     sourceUrl: '#'
